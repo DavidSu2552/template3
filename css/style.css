@@ -85,6 +85,8 @@ body header {
 
 body header .flex-space-between {
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -273,7 +275,7 @@ img {
 }
 
 .social-icon {
-  margin-left: 5px;
+  margin-left: 1px;
   width: 30px;
   cursor: pointer;
 }
