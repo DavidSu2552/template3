@@ -146,6 +146,12 @@ img {
   }
 }
 
+@media (min-width: 375px) {
+  .fullpage {
+    padding: 60px 0;
+  }
+}
+
 .fullpage .main-block {
   margin: 0;
   text-align: center;

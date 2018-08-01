@@ -117,6 +117,9 @@ img {
     height: calc(100vh - 139px);
     padding: 100px 0;
 }
+@media (min-width: 375px) {
+    padding: 60px 0;
+}
     .main-block{
         margin: 0;
         text-align: center;
