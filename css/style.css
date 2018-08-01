@@ -491,6 +491,10 @@ img {
   }
 }
 
+.info-list-item:last-child::after {
+  width: 0;
+}
+
 .info-link {
   -webkit-transition: .3s;
   transition: .3s;
