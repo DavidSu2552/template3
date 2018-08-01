@@ -81,6 +81,7 @@ button, input, optgroup, select, textarea {
 body {
   background-image: url(../image/bg.jpg);
   background-size: cover;
+  background-repeat: repeat-y;
   background-position: 50%;
   display: block;
   font-family: "Microsoft JhengHei","OpenSans";
@@ -140,7 +141,7 @@ img {
 
 @media (min-width: 768px) {
   .fullpage {
-    height: calc(100vh - -2px);
+    height: calc(100vh - 139px);
     padding: 100px 0;
   }
 }
@@ -310,6 +311,15 @@ img {
   }
 }
 
+@media (min-width: 992px) {
+  .block {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 .block h3 {
   font-weight: 500;
 }
@@ -343,6 +353,12 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 .logo {
   width: 200px;
 }
@@ -365,14 +381,14 @@ img {
 }
 
 .social-icon {
-  margin-left: 1px;
+  margin-left: 0px;
   width: 30px;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .social-icon {
-    margin-left: 15px;
+    margin-left: 10px;
     width: 45px;
   }
 }

@@ -66,7 +66,7 @@ button, input, optgroup, select, textarea {
 body {
     background-image: url(../image/bg.jpg);
     background-size: cover;
-    // background-repeat: repeat-y;
+    background-repeat: repeat-y;
     background-position: 50%;
     display: block;
     font-family: "Microsoft JhengHei","OpenSans";
@@ -114,7 +114,7 @@ img {
     height: 614px;
     padding: 30px 0;
     @media (min-width: 768px) {
-    height: calc(100vh - -2px);
+    height: calc(100vh - 139px);
     padding: 100px 0;
 }
     .main-block{
@@ -244,7 +244,13 @@ img {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-}
+    }
+    @media (min-width: 992px) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
     h3 {
         font-weight: 500;
     }
@@ -271,6 +277,9 @@ img {
     top: calc(50% - 273px);
     max-width: 720px;
 }
+@media (min-width: 1200px) {
+    max-width: 1140px;
+}
 }
 .logo {
     width: 200px;
@@ -286,11 +295,11 @@ img {
     }
 }
 .social-icon {
-    margin-left: 1px;
+    margin-left: 0px;
     width: 30px;
     cursor: pointer;
     @media (min-width: 768px) {
-    margin-left: 15px;
+    margin-left: 10px;
     width: 45px;
 }
 }
